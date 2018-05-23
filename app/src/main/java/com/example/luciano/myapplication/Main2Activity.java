@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener {
     int contador2;
+    int contador3
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
