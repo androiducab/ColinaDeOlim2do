@@ -40,8 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String cadena = (String) bundle.get("dato"); //nos aseguramos que no venga nulo para no haber error
 
             textView.setText(cadena); //lo transformo en cadena
-            Toast toast1 = Toast.makeText(getApplicationContext(), contador).show();
-            toast1.show();
+
         }
     }
 
