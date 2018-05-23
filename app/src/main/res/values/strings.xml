@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="arroz">Arroz</string>
+    <string name="mantequilla">Mantequilla</string>
+    <string name="pan">Pan</string>
+    <string name="papas">Papas</string>
+    <string name="queso">Queso</string>
+    <string name="harina_maiz">harina maiz</string>
+    <string name="huevos">Huevos</string>
+    <string name="pasta">Pasta</string>
+    <string name="leche">Leche</string>
+    <string name="salsa">Salsa</string>
+    <string name="mayonesa">Mayonesa</string>
+    <string name="harina_trigo">Harina trigo</string>
+    <string name="cebolla">Cebolla</string>
+    <string name="coca_cola">Coca Cola</string>
+    <string name="pimenton">Pimenton</string>
+    <string name="salchichas">Salchichas</string>
+    <string name="jamon">Jamon</string>
+    <string name="flips">Flips</string>
+    <string name="tocineta">Tocineta</string>
+    <string name="cambur">Cambur</string>
+    <string name="teque_os">Tequeños</string>
+    <string name="producto">Producto</string>
+    <string name="comprar">Comprar</string>
+</resources>
