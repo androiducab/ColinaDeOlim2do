@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        if (bundle!=null) {
           contador = mibundle.getInt("oh");
        }
+
         switch (contador) {
             case 0:
                 textView = (TextView)findViewById(R.id.textView11); //enlazamos el text view con su id

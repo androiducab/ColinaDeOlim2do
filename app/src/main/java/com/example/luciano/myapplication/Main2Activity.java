@@ -3,12 +3,14 @@ package com.example.luciano.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener {
     int contador2;
-    int contador3
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,8 +55,27 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         btn19.setOnClickListener(this); // Habilito los botones
         Button btn20 = (Button) findViewById(R.id.button24);
         btn20.setOnClickListener(this); // Habilito los botones
+        Log.d(".....");
+        Log.d("oncreate");
+        mMessageEditText = (EditText) findViewById(R.id.ediText_main);
+        mReplyHeadTextView = (TextView)findViewById(R.id.text_header_reply);
+        mReplyTextView = (TextView) findViewById(R.id.text_message_reply);
+        if (savedInstanceState != null){
+            boolean isVisible = savedInstanceState.getBoolean("reply_visible");
+            if (isVisible) {
+                mReplyHeadTextView.setVisibility (View.VISIBLE);
+                mReplyTextView.setText(savedInstanceState.getString("reply_text"));
+                mReplyTextView.setVisibility (View.VISIBLE);
+            }
+        }
     }
-
+    public void onSaveInstanceState (Bundle outState){
+        super.onSaveInstanceState(outState);
+        if (mReplyHeadTextView.getVisibility() == View.VISIBLE) {
+            outState.putBoolean("reply_visible", true);
+            outState.putBoolean("reply_text",mReplyTextView.getText().toString());
+        }
+    }
     @Override
     public void onClick(View v) {
         Intent intent2 = new Intent(this, MainActivity.class);
